@@ -3,7 +3,6 @@
 }
 .container{
     height: 100vh;
-    /* padding: 40px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,7 +44,7 @@
 .box:nth-child(2){
     border-top: none;
 }
-.restart{
+#restartBtn{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,13 +52,13 @@
     height: 45px;
     width: 80px;
 }
-.restart:hover{
+#restartBtn:hover{
     cursor: pointer;
     background-color: #fa0d2c;
     color: aliceblue;
     transform: translate(-2px);
 }
-h1{
+#gameTitle{
     color: aqua;
     font-size: 60px;
     text-transform: uppercase;
