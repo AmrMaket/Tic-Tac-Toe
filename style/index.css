@@ -65,3 +65,12 @@
     margin-top: 0px;
     padding: 0;
 }
+#scoreboard {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color: aqua;
+    background-color: aliceblue;
+}

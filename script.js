@@ -12,6 +12,10 @@ const WINNING_COMBINATIONS = [
 ];
 
 
+let playerXScore = 0;
+let playerOScore = 0;
+const playerXScoreElement = document.getElementById('playerXScore');
+const playerOScoreElement = document.getElementById('playerOScore');
 let currentPlayer = PLAYER_X;
 let gameActive = true;
 const board = ['', '', '', '', '', '', '', '', ''];
@@ -80,5 +84,14 @@ function restartGame() {
   for (let i = 0; i < boxes.length; i++) {
     boxes[i].textContent = '';
     boxes[i].classList.remove(PLAYER_X, PLAYER_O);
+  }
+}
+function updateScore(player) {
+  if (player === PLAYER_X) {
+      playerXScore++;
+      playerXScoreElement.innerText = `Player X: ${playerXScore}`;
+  } else if (player === PLAYER_O) {
+      playerOScore++;
+      playerOScoreElement.innerText = `Player O: ${playerOScore}`;
   }
 }
